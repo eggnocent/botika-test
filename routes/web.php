@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\Http\Controllers\PekerjaanController;
+use app\Http\Controllers\DivisiController;
+use app\Http\Controllers\KaryawanController;
+
 use Inertia\Inertia;
 
 Route::get('/', function () {
