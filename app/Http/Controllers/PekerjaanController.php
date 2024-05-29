@@ -10,7 +10,7 @@ class PekerjaanController extends Controller
     public function index()
     {
         $pekerjaans = Pekerjaan::all();
-        return response()->json($pekerjaans);
+        return inertia('Pekerjaan/Index', ['pekerjaans' => $pekerjaans]);
     }
 
     public function store(Request $request)
